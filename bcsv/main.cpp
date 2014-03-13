@@ -13,6 +13,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <locale>
 #include <cstring>
 
 #ifdef BOOST_WINDOWS_API
@@ -42,8 +43,6 @@ int main(int argc, char** argv)
        std::cout << "Error leyendo archivo";  
        return 1;
        }
-   
-   std::getline();
    
    while (arch->good())          // loop while extraction from file is possible
   {
