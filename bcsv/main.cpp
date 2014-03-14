@@ -34,7 +34,7 @@ namespace fs = boost::filesystem;
  * 
  */
 int main(int argc, char** argv) 
-{
+{   
    std::ios::sync_with_stdio(false);
    fs::initial_path();
   
