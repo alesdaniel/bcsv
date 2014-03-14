@@ -35,6 +35,33 @@
         <rebuildPropChanged>false</rebuildPropChanged>
       </toolsSet>
       <compileType>
+        <linkerTool>
+          <linkerLibItems>
+            <linkerLibLibItem>boost_atomic-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_chrono-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_date_time-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_filesystem-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_graph-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_iostreams-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_locale-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_c99-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_c99f-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_tr1-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_math_tr1f-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_prg_exec_monitor-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_program_options-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_random-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_regex-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_serialization-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_signals-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_system-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_thread-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_timer-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_unit_test_framework-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_wave-mt.dll</linkerLibLibItem>
+            <linkerLibLibItem>boost_wserialization-mt.dll</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
       </compileType>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
