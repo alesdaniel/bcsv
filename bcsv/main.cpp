@@ -16,6 +16,8 @@
 #include <locale>
 #include <cstring>
 
+#include "csvproc.hpp"
+
 #ifdef BOOST_WINDOWS_API
 # include <windows.h>
 #endif
@@ -35,22 +37,21 @@ int main(int argc, char** argv)
 {
    std::ios::sync_with_stdio(false);
    fs::initial_path();
- 
-   std::istream* arch = 0;
-   arch = new std::ifstream("c:\\postgresql-2014-01-08_000000.log");
+  
+   std::ifstream arch("c:\\postgresql-2014-01-08_000000.log");
 
-   if (arch == 0) {
-       std::cout << "Error leyendo archivo";  
+   if (!arch.is_open()) {
+       std::cerr << "Error leyendo archivo";  
        return 1;
        }
    
-   while (arch->good())          // loop while extraction from file is possible
+   while (arch.good())          // loop while extraction from file is possible
   {
-    char c = arch->get();       // get character from file
-    if (arch->good())
+    char c = arch.get();       // get character from file
+    if (arch.good())
       std::cout << c;
   }
 
-   
+    arch.close();
     return 0;
 }
