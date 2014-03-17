@@ -1,5 +1,5 @@
 /*
- *     This file is part of bcsv.
+ *  This file is part of bcsv.
  * 
  *  Foobar is free software: you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
