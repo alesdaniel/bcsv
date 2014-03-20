@@ -35,17 +35,74 @@ class csvproc {
 public:
     csvproc();
     csvproc(const csvproc& orig);
-    bool abre(std::string arch);
+    void procesacsv(std::string arch);   
     virtual ~csvproc();
 private:
-    
+    std::ifstream entrada;
+    bool abre(std::string arch);
+    void cierra();
+    void lee();
 protected:    
     int linea;
     int sql;
     int sql_insert;
     int sql_select;
     int sql_update;
+    int sql_otro;
+    int csvpos;
+/*CREATE TABLE postgres_log
+(
+  log_time timestamp(3) with time zone,
+  user_name text,
+  database_name text,
+  process_id integer,
+  connection_from text,
+  session_id text,
+  session_line_num bigint,
+  command_tag text,
+  session_start_time timestamp with time zone,
+  virtual_transaction_id text,
+  transaction_id bigint,
+  error_severity text,
+  sql_state_code text,
+  message text,
+  detail text,
+  hint text,
+  internal_query text,
+  internal_query_pos integer,
+  context text,
+  query text,
+  query_pos integer,
+  location text,
+  application_name text,
+  PRIMARY KEY (session_id, session_line_num)
+);*/    
+  struct logcsv
+  {
+   std::string log_time;
+   std::string user_name;
+   std::string database_name;
+   std::string process_id;
+   std::string connection_from;
+   std::string session_id;
+   std::string session_line_num;
+   std::string command_tag;
+   std::string session_start_time;
+   std::string virtual_transaction_id;
+   std::string transaction_id;
+   std::string error_severity;
+   std::string sql_state_code;
+   std::string message;
+   std::string detail;
+   std::string hint;
+   std::string internal_query;
+   std::string internal_query_pos;
+   std::string contex;
+   std::string query;
+   std::string query_pos;
+   std::string location;
+   std::string application_name;
+  };  
 };
-
 #endif	/* CSVPROC_HPP */
 
