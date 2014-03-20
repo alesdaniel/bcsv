@@ -43,31 +43,19 @@ static bool echo = false;
 static bool create_dirs = false;
 static bool boost_build_v2 = true;
 
-
 using namespace std;
-namespace fs = boost::filesystem;     
+namespace fs = boost::filesystem;
 /*
  * 
  */
 int main(int argc, char** argv) 
 {   
-   std::ios::sync_with_stdio(false);
-   fs::initial_path();
+  std::ios::sync_with_stdio(false);
+  fs::initial_path();
   
-   std::ifstream arch("c:\\postgresql-2014-01-08_000000.log");
+  csvproc csvproc; 
 
-   if (!arch.is_open()) {
-       std::cerr << "Error leyendo archivo";  
-       return 1;
-       }
-   
-   while (arch.good())          // loop while extraction from file is possible
-  {
-    char c = arch.get();       // get character from file
-    if (arch.good())
-      std::cout << c;
-  }
-
-    arch.close();
-    return 0;
+  csvproc.procesacsv("d:\\postgresql-2014-03-14_000000.csv");
+  
+  return 0;
 }
