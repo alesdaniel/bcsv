@@ -24,7 +24,7 @@
 
 #include <boost/config/warning_disable.hpp>
 #include <boost/filesystem.hpp>
-
+// Falta el log, luego agrego
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
