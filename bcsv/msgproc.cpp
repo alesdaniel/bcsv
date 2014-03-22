@@ -20,7 +20,9 @@
  * 
  * Created on 20 de marzo de 2014, 17:35
  */
-
+/* Deberia analizar el campo msg del log y ver si que funcion es para descartarla
+ * o reenviarla a el servidor
+ */
 #include "msgproc.hpp"
 
 msgproc::msgproc() {
