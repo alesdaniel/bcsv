@@ -21,15 +21,12 @@
  * Created on 14 de marzo de 2014, 17:38
  */
 #include "csvproc.hpp"
+
 using namespace std;
+
 csvproc::csvproc()
 {
   linea = 0;
-  sql = 0;
-  sql_insert = 0;
-  sql_select = 0;
-  sql_update = 0;
-  sql_otro = 0;
   csvpos =0;
 }
 
@@ -61,6 +58,8 @@ void csvproc::lee()
   comillas = false;  
   char c;
   long bytes;
+  msgproc msgproc;
+  
   while (entrada.good())         
   {
     c = entrada.get();      
@@ -93,7 +92,8 @@ void csvproc::lee()
         csvpos = 0;
         //cout << log.log_time << "-" << log.user_name << "-" << log.database_name;
         cout << linea << " -- " << bytes << endl;
-        //msgproc.
+        //msgproc->proc(log.message);
+        msgproc.proc(log.message);
         //*********************************************************************
         // Limpia los campos, hace mas lento el proceso pero no deja sin memoria
         // a la maquina cuando el archivo de log es muy grande

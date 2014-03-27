@@ -23,6 +23,8 @@
 
 #include "log.hpp"
 
+using namespace std;
+
 log::log() {
 }
 

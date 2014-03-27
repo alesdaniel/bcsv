@@ -25,10 +25,46 @@
  */
 #include "msgproc.hpp"
 
+
+
 msgproc::msgproc() {
+    sql = 0; 
+    no_sql = 0; 
+    sql_insert = 0;
+    sql_select = 0;
+    sql_update = 0;
+    sql_otro = 0;
 }
 
 msgproc::msgproc(const msgproc& orig) {
+}
+
+int msgproc::tokmsg(string msg) {
+  
+  int cont;
+  cont  =-1;
+  typedef boost::tokenizer<boost::char_separator<char> > 
+    tokenizer;
+  boost::char_separator<char> sep(": ");
+  tokenizer tokens(msg, sep);
+  for (tokenizer::iterator tok_iter = tokens.begin();
+       tok_iter != tokens.end(); ++tok_iter)
+      strarray[++cont]=*tok_iter;
+    /*std::cout << "<" << *tok_iter << "> ";
+  std::cout << "\n";   */
+  if (strarray[0] == "statement")
+      return 1; 
+  return 0;
+}
+
+void msgproc::proc(string msg) {
+//  strarray->clear();   falta funcion para limpiar variable
+    
+  switch(tokmsg(msg)) 
+  {
+      case 1: break;
+      default: break;
+  }       
 }
 
 msgproc::~msgproc() {

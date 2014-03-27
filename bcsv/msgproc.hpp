@@ -24,15 +24,32 @@
 #ifndef MSGPROC_HPP
 #define	MSGPROC_HPP
 
+#include <string>
+#include <cstring>
+#include <iostream>
+#include <boost/tokenizer.hpp>
 
+using namespace std;
+using namespace boost;
 
 class msgproc {
 public:
     msgproc();
     msgproc(const msgproc& orig);
     virtual ~msgproc();
+    void proc(string msg);
 private:
+    int tokmsg(string msg);
+    int maxstr;
+    string strarray[400];    
 protected:
+    int sql;
+    int sql_insert;
+    int sql_select;
+    int sql_update;
+    int sql_otro;
+    int no_sql;
+
 };
 
 #endif	/* MSGPROC_HPP */

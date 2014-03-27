@@ -45,15 +45,10 @@ private:
     bool abre(std::string arch);
     void cierra();
     void lee();
-    friend msgproc;
+
     friend log;
 protected:    
     int linea;
-    int sql;
-    int sql_insert;
-    int sql_select;
-    int sql_update;
-    int sql_otro;
     int csvpos;
 /*CREATE TABLE postgres_log
 (

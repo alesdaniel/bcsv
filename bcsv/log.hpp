@@ -24,6 +24,8 @@
 #ifndef LOG_HPP
 #define	LOG_HPP
 
+
+
 class log {
 public:
     log();
