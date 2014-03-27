@@ -93,6 +93,7 @@ void csvproc::lee()
         csvpos = 0;
         //cout << log.log_time << "-" << log.user_name << "-" << log.database_name;
         cout << linea << " -- " << bytes << endl;
+        //msgproc.
         //*********************************************************************
         // Limpia los campos, hace mas lento el proceso pero no deja sin memoria
         // a la maquina cuando el archivo de log es muy grande

@@ -24,14 +24,13 @@
 
 #include <boost/config/warning_disable.hpp>
 #include <boost/filesystem.hpp>
-// Falta el log, luego agrego
+#include <boost/version.hpp>
 #include <cstdlib>
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <locale>
 #include <cstring>
-
 #include "csvproc.hpp"
 
 #ifdef BOOST_WINDOWS_API
@@ -56,6 +55,7 @@ int main(int argc, char** argv)
   csvproc csvproc; 
 
   csvproc.procesacsv("d:\\postgresql-2014-03-14_000000.csv");
+
   
   return 0;
 }

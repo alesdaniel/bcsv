@@ -15,25 +15,23 @@
  *  along with bcsv.  If not, see <http://www.gnu.org/licenses/>.
  */
 /* 
- * File:   msgproc.hpp
+ * File:   log.hpp
  * Author: dales
  *
- * Created on 20 de marzo de 2014, 17:35
+ * Created on 26 de marzo de 2014, 18:51
  */
 
-#ifndef MSGPROC_HPP
-#define	MSGPROC_HPP
+#ifndef LOG_HPP
+#define	LOG_HPP
 
-
-
-class msgproc {
+class log {
 public:
-    msgproc();
-    msgproc(const msgproc& orig);
-    virtual ~msgproc();
+    log();
+    log(const log& orig);
+    virtual ~log();
 private:
-protected:
+
 };
 
-#endif	/* MSGPROC_HPP */
+#endif	/* LOG_HPP */
 

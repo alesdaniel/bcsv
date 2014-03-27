@@ -30,6 +30,9 @@
 #include <string>
 #include <locale>
 #include <cstring>
+#include "msgproc.hpp"
+#include "log.hpp"
+
 
 class csvproc {
 public:
@@ -42,6 +45,8 @@ private:
     bool abre(std::string arch);
     void cierra();
     void lee();
+    friend msgproc;
+    friend log;
 protected:    
     int linea;
     int sql;
