@@ -23,7 +23,7 @@ AS=as
 # Macros
 CND_PLATFORM=Cygwin_4.x-Windows
 CND_DLIB_EXT=dll
-CND_CONF=Debug
+CND_CONF=Linux-Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
 
@@ -55,7 +55,7 @@ FFLAGS=
 ASFLAGS=
 
 # Link Libraries and Options
-LDLIBSOPTIONS=-lboost_atomic-mt.dll -lboost_chrono-mt.dll -lboost_date_time-mt.dll -lboost_filesystem-mt.dll -lboost_graph-mt.dll -lboost_iostreams-mt.dll -lboost_locale-mt.dll -lboost_math_c99-mt.dll -lboost_math_c99f-mt.dll -lboost_math_tr1-mt.dll -lboost_math_tr1f-mt.dll -lboost_prg_exec_monitor-mt.dll -lboost_program_options-mt.dll -lboost_random-mt.dll -lboost_regex-mt.dll -lboost_serialization-mt.dll -lboost_signals-mt.dll -lboost_system-mt.dll -lboost_thread-mt.dll -lboost_timer-mt.dll -lboost_unit_test_framework-mt.dll -lboost_wave-mt.dll -lboost_wserialization-mt.dll
+LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}

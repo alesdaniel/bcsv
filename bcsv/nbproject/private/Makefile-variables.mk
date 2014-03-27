@@ -3,5 +3,7 @@
 #
 # NOCDDL
 #
-# Debug configuration
-# Release configuration
+# Win-Debug configuration
+# Win-Release configuration
+# Linux-Debug configuration
+# linux-Release configuration

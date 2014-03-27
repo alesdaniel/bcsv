@@ -12,11 +12,19 @@
             <sourceRootList/>
             <confList>
                 <confElem>
-                    <name>Debug</name>
+                    <name>Win-Debug</name>
                     <type>1</type>
                 </confElem>
                 <confElem>
-                    <name>Release</name>
+                    <name>Win-Release</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>Linux-Debug</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
+                    <name>linux-Release</name>
                     <type>1</type>
                 </confElem>
             </confList>

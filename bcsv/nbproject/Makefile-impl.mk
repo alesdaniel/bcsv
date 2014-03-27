@@ -27,11 +27,11 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 PROJECTNAME=bcsv
 
 # Active Configuration
-DEFAULTCONF=Debug
+DEFAULTCONF=Win-Debug
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug Release 
+ALLCONFS=Win-Debug Win-Release Linux-Debug linux-Release 
 
 
 # build
