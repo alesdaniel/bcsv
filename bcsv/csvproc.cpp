@@ -92,7 +92,7 @@ void csvproc::lee()
         csvpos = 0;
         //cout << log.log_time << "-" << log.user_name << "-" << log.database_name;
         cout << linea << " -- " << bytes << endl;
-        //msgproc->proc(log.message);
+        //Falta agregar por parametro que usuario y base de datos se replica o no 
         msgproc.proc(log.message);
         //*********************************************************************
         // Limpia los campos, hace mas lento el proceso pero no deja sin memoria

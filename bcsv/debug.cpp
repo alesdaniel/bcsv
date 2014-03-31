@@ -15,22 +15,20 @@
  *  along with bcsv.  If not, see <http://www.gnu.org/licenses/>.
  */
 /* 
- * File:   log.cpp
+ * File:   debug.cpp
  * Author: dales
  * 
  * Created on 26 de marzo de 2014, 18:52
  */
 
-#include "log.hpp"
+#include "debug.hpp"
 
-using namespace std;
 
-log::log() {
+
+debug::debug() {
 }
 
-log::log(const log& orig) {
-}
 
-log::~log() {
+debug::~debug() {
 }
 

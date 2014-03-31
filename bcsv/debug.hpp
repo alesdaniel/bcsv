@@ -15,25 +15,24 @@
  *  along with bcsv.  If not, see <http://www.gnu.org/licenses/>.
  */
 /* 
- * File:   log.hpp
+ * File:   debug.hpp
  * Author: dales
  *
  * Created on 26 de marzo de 2014, 18:51
  */
 
-#ifndef LOG_HPP
-#define	LOG_HPP
+#ifndef DEBUG_HPP
+#define	DEBUG_HPP
 
+using namespace std;
 
-
-class log {
+class debug {
 public:
-    log();
-    log(const log& orig);
-    virtual ~log();
+    debug();
+    virtual ~debug();
 private:
 
 };
 
-#endif	/* LOG_HPP */
+#endif	/* DEBUG_HPP */
 

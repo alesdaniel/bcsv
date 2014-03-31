@@ -36,7 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/csvproc.o \
-	${OBJECTDIR}/log.o \
+	${OBJECTDIR}/debug.o \
 	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/msgproc.o
 
@@ -70,10 +70,10 @@ ${OBJECTDIR}/csvproc.o: csvproc.cpp
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/csvproc.o csvproc.cpp
 
-${OBJECTDIR}/log.o: log.cpp 
+${OBJECTDIR}/debug.o: debug.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/log.o log.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/debug.o debug.cpp
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}

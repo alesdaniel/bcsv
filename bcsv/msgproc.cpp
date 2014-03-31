@@ -33,6 +33,7 @@ msgproc::msgproc() {
     sql_insert = 0;
     sql_select = 0;
     sql_update = 0;
+    sql_delete = 0;
     sql_otro = 0;
 }
 
@@ -59,13 +60,35 @@ int msgproc::tokmsg(string msg) {
 
 void msgproc::proc(string msg) {
 //  strarray->clear();   falta funcion para limpiar variable
-    
+  limpia_strarray();  
   switch(tokmsg(msg)) 
   {
-      case 1: break;
-      default: break;
+      case 1:
+          proc_statement(msg);
+          break;  //analiza que funcion sql es para replicarla o no
+      default: break; //el resto de las funciones se vera caso por caso
   }       
 }
+
+void msgproc::limpia_strarray() {
+  for (int i = 0;i<3000;i++)
+     strarray[i].clear();
+}
+
+
+void msgproc::proc_statement(string msg) {
+  int cont = 0;
+  bool var = false;
+  string str;
+  while ((!var) || (cont > 3000))
+  {
+   cont++;
+   str.clear();   
+   str = boost::to_upper_copy(strarray[cont]);
+   
+  }   
+}
+
 
 msgproc::~msgproc() {
 }

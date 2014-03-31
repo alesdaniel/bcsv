@@ -5,7 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>csvproc.hpp</itemPath>
-      <itemPath>log.hpp</itemPath>
+      <itemPath>debug.hpp</itemPath>
       <itemPath>msgproc.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -16,7 +16,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>csvproc.cpp</itemPath>
-      <itemPath>log.cpp</itemPath>
+      <itemPath>debug.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
       <itemPath>msgproc.cpp</itemPath>
     </logicalFolder>
@@ -73,9 +73,9 @@
       </item>
       <item path="csvproc.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="log.cpp" ex="false" tool="1" flavor2="0">
+      <item path="debug.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="log.hpp" ex="false" tool="3" flavor2="0">
+      <item path="debug.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -108,9 +108,9 @@
       </item>
       <item path="csvproc.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="log.cpp" ex="false" tool="1" flavor2="0">
+      <item path="debug.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="log.hpp" ex="false" tool="3" flavor2="0">
+      <item path="debug.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -131,9 +131,9 @@
       </item>
       <item path="csvproc.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="log.cpp" ex="false" tool="1" flavor2="0">
+      <item path="debug.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="log.hpp" ex="false" tool="3" flavor2="0">
+      <item path="debug.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -154,9 +154,9 @@
       </item>
       <item path="csvproc.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="log.cpp" ex="false" tool="1" flavor2="0">
+      <item path="debug.cpp" ex="false" tool="1" flavor2="0">
       </item>
-      <item path="log.hpp" ex="false" tool="3" flavor2="0">
+      <item path="debug.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
       </item>

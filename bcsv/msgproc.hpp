@@ -28,6 +28,8 @@
 #include <cstring>
 #include <iostream>
 #include <boost/tokenizer.hpp>
+#include <boost/algorithm/string.hpp>
+#include "debug.hpp"
 
 using namespace std;
 using namespace boost;
@@ -40,13 +42,16 @@ public:
     void proc(string msg);
 private:
     int tokmsg(string msg);
-    int maxstr;
-    string strarray[400];    
+    string strarray[3000];
+    void limpia_strarray();
+    void proc_statement(string msg);
+    friend debug;
 protected:
     int sql;
     int sql_insert;
     int sql_select;
     int sql_update;
+    int sql_delete;
     int sql_otro;
     int no_sql;
 

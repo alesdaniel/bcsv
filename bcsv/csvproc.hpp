@@ -31,7 +31,7 @@
 #include <locale>
 #include <cstring>
 #include "msgproc.hpp"
-#include "log.hpp"
+#include "debug.hpp"
 
 
 class csvproc {
@@ -46,7 +46,7 @@ private:
     void cierra();
     void lee();
 
-    friend log;
+//    friend log;
 protected:    
     int linea;
     int csvpos;
